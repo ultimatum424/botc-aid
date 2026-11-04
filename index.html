@@ -22,14 +22,14 @@
       <p id="results" class="muted"></p>
       <section aria-labelledby="players-heading">
         <div class="section-heading"><h2 id="players-heading">Игроки</h2><span class="muted">Сводка по итоговому состоянию</span></div>
-        <div class="table-wrap"><table><thead><tr><th scope="col">Профиль</th><th scope="col">Игр</th><th scope="col">Мёртв в конце</th><th scope="col">Голос мёртвого использован</th><th scope="col">Последние роли</th></tr></thead><tbody id="players"></tbody></table></div>
+        <div class="table-wrap"><table><thead><tr><th scope="col">Профиль</th><th scope="col">Игр</th><th scope="col">Мёртв в конце</th><th scope="col">Голос мёртвого использован</th><th scope="col">Роли в конце партий</th></tr></thead><tbody id="players"></tbody></table></div>
         <p class="hint">В статистику профиля попадают только участники с привязанным publicId. Совпадение игрового ника с именем профиля не создаёт связь.</p>
       </section>
       <section aria-labelledby="games-heading">
         <div class="section-heading"><h2 id="games-heading">Игры</h2><span id="game-count" class="muted"></span></div>
         <div class="filters">
-          <label>Сценарий<select id="script-filter"><option value="">Все сценарии</option></select></label>
-          <label>Профиль<select id="player-filter"><option value="">Все игроки и гости</option></select></label>
+          <label>Сценарий<select id="script-filter" aria-label="Сценарий"><option value="">Все сценарии</option></select></label>
+          <label>Профиль<select id="player-filter" aria-label="Профиль"><option value="">Все игроки и гости</option></select></label>
           <button id="reset" type="button" class="button">Сбросить</button>
         </div>
         <div id="games"></div>
