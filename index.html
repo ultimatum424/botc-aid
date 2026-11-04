@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Тестовая статистика Blood on the Clocktower: игры, игроки и страницы гримуара.">
+  <title>BOTC Aid · Статистика</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div><span class="eyebrow">BLOOD ON THE CLOCKTOWER</span><h1>BOTC Aid <span>Статистика</span></h1></div>
+      <a class="button" href="./data/dataset.json" download="botc-test-games.json">Скачать JSON</a>
+    </header>
+    <p class="notice"><strong>Тестовые данные.</strong> Десять проверок Android-приложения. Игроки вымышлены, победители назначены для тестов.</p>
+    <p id="status" role="status">Загружаем игры…</p>
+    <div id="content" hidden>
+      <section aria-label="Общая статистика" id="overview" class="metrics"></section>
+      <p id="results" class="muted"></p>
+      <section aria-labelledby="players-heading">
+        <div class="section-heading"><h2 id="players-heading">Игроки</h2><span class="muted">Сводка по итоговому состоянию</span></div>
+        <div class="table-wrap"><table><thead><tr><th scope="col">Профиль</th><th scope="col">Игр</th><th scope="col">Мёртв в конце</th><th scope="col">Голос мёртвого использован</th><th scope="col">Последние роли</th></tr></thead><tbody id="players"></tbody></table></div>
+        <p class="hint">В статистику профиля попадают только участники с привязанным publicId. Совпадение игрового ника с именем профиля не создаёт связь.</p>
+      </section>
+      <section aria-labelledby="games-heading">
+        <div class="section-heading"><h2 id="games-heading">Игры</h2><span id="game-count" class="muted"></span></div>
+        <div class="filters">
+          <label>Сценарий<select id="script-filter"><option value="">Все сценарии</option></select></label>
+          <label>Профиль<select id="player-filter"><option value="">Все игроки и гости</option></select></label>
+          <button id="reset" type="button" class="button">Сбросить</button>
+        </div>
+        <div id="games"></div>
+      </section>
+      <details class="method"><summary>Как читать эти данные</summary>
+        <p>Результат команды взят из ClockTracker. Личные победы и процент побед пока не рассчитываются: правило для игроков, сменивших команду, ещё не выбрано.</p>
+        <p>Страницы гримуара показывают сохранённые состояния стола. Их номера не означают точный день или ночь. Исторические жетоны отображаются с игровыми никами без догадки о привязке к профилю после перестановок.</p>
+        <p>Напоминания передаются в том виде, в котором их сохранил сайт. Это отметки рассказчика, а не автоматическое доказательство применения способности. В экспорте нет полного журнала номинаций, количества голосов, причин смерти и точного времени действий.</p>
+        <p>Гости видны в составе партии, но не объединяются между играми. Traveller уже входит в число участников этих выгрузок.</p>
+      </details>
+      <footer id="updated" class="muted"></footer>
+    </div>
+  </main>
+</body>
+</html>

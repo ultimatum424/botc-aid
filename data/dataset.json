@@ -1,0 +1,3325 @@
+{
+  "schemaVersion": 1,
+  "isTest": true,
+  "datasetId": "android-live-2026-11-04",
+  "generatedAt": "2026-11-04T22:37:44.081Z",
+  "players": [
+    {
+      "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+      "name": "TEST_A"
+    },
+    {
+      "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+      "name": "TEST_B"
+    },
+    {
+      "publicId": "6551504d-a7b8-4963-88e9-e1bf3180ab8f",
+      "name": "TEST_C"
+    },
+    {
+      "publicId": "882a1e82-08e6-4909-842d-2daf626c47bc",
+      "name": "TEST_D"
+    },
+    {
+      "publicId": "826ad3f5-db22-4336-a2c5-f5be9106663f",
+      "name": "TEST_E"
+    },
+    {
+      "publicId": "f40759a9-bac0-4610-b3d3-7d1bb654f9d1",
+      "name": "TEST_F"
+    }
+  ],
+  "games": [
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "c3ea66a5-af41-4841-80fb-efe554720931",
+      "caseNumber": 1,
+      "title": "Отравление, смерть, голос мёртвого; профили и гости",
+      "script": {
+        "id": 178,
+        "version": "1.0.0",
+        "name": "Trouble Brewing"
+      },
+      "date": "2026-11-04T11:41:17.488Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Poisoner",
+          "finalRoleId": "poisoner",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Washerwoman",
+          "finalRoleId": "washerwoman",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": "6551504d-a7b8-4963-88e9-e1bf3180ab8f",
+          "databaseName": "TEST_C",
+          "gameNickname": "TEST_C",
+          "dealtRoleLabel": "Slayer",
+          "finalRoleId": "slayer",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": true
+        },
+        {
+          "order": 3,
+          "publicId": "882a1e82-08e6-4909-842d-2daf626c47bc",
+          "databaseName": "TEST_D",
+          "gameNickname": "TEST_D",
+          "dealtRoleLabel": "Recluse",
+          "finalRoleId": "recluse",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "TEST_F",
+          "dealtRoleLabel": "Imp",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "TEST_E",
+          "dealtRoleLabel": "Empath",
+          "finalRoleId": "empath",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "poisoner",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "washerwoman",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "slayer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_F",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "TEST_E",
+              "role_id": "empath",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "poisoner",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "washerwoman",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "poisoner",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "slayer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_F",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "TEST_E",
+              "role_id": "empath",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "poisoner",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "washerwoman",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "poisoner",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "slayer",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_F",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "TEST_E",
+              "role_id": "empath",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "poisoner",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "washerwoman",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "poisoner",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "slayer",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_F",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "TEST_E",
+              "role_id": "empath",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "64387744-05ae-4bf4-98a6-63b0e3463812",
+      "caseNumber": 2,
+      "title": "Переименование, обмен ролями, Become, команда и перенос жетона",
+      "script": {
+        "id": 178,
+        "version": "1.0.0",
+        "name": "Trouble Brewing"
+      },
+      "date": "2026-11-04T11:48:39.590Z",
+      "winner": "EVIL_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "T02_A_RENAMED",
+          "dealtRoleLabel": "Recluse",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Empath",
+          "finalRoleId": "recluse",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": "6551504d-a7b8-4963-88e9-e1bf3180ab8f",
+          "databaseName": "TEST_C",
+          "gameNickname": "TEST_C",
+          "dealtRoleLabel": "Monk",
+          "finalRoleId": "monk",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": "882a1e82-08e6-4909-842d-2daf626c47bc",
+          "databaseName": "TEST_D",
+          "gameNickname": "TEST_D",
+          "dealtRoleLabel": "Chef",
+          "finalRoleId": "chef",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T02_E",
+          "dealtRoleLabel": "Imp",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T02_F",
+          "dealtRoleLabel": "Scarlet Woman",
+          "finalRoleId": "scarletwoman",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "T02_A_RENAMED",
+              "role_id": "empath",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "monk",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T02_E",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T02_F",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "T02_A_RENAMED",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "monk",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T02_E",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T02_F",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "T02_A_RENAMED",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "monk",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T02_E",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T02_F",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "T02_A_RENAMED",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "recluse",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "TEST_C",
+              "role_id": "monk",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "TEST_D",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T02_E",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T02_F",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "fabb27c5-c1ea-4f9a-9e4d-7b1d2bf64080",
+      "caseNumber": 3,
+      "title": "Drunk в подготовке, ночная смерть Ravenkeeper",
+      "script": {
+        "id": 178,
+        "version": "1.0.0",
+        "name": "Trouble Brewing"
+      },
+      "date": "2026-11-04T11:52:13.237Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Ravenkeeper",
+          "finalRoleId": "ravenkeeper",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Imp",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T03_C",
+          "dealtRoleLabel": "Chef",
+          "finalRoleId": "chef",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T03_D",
+          "dealtRoleLabel": "Spy",
+          "finalRoleId": "spy",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T03_E",
+          "dealtRoleLabel": "Soldier",
+          "finalRoleId": "soldier",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T03_F",
+          "dealtRoleLabel": "Fortune Teller",
+          "finalRoleId": "fortuneteller",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "ravenkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T03_C",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T03_D",
+              "role_id": "spy",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T03_E",
+              "role_id": "soldier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T03_F",
+              "role_id": "fortuneteller",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "ravenkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T03_C",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T03_D",
+              "role_id": "spy",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T03_E",
+              "role_id": "soldier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T03_F",
+              "role_id": "fortuneteller",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "ravenkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T03_C",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T03_D",
+              "role_id": "spy",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T03_E",
+              "role_id": "soldier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T03_F",
+              "role_id": "fortuneteller",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "ravenkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T03_C",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T03_D",
+              "role_id": "spy",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T03_E",
+              "role_id": "soldier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T03_F",
+              "role_id": "fortuneteller",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "4a590ccd-25d0-4cca-94be-edd430dcbde0",
+      "caseNumber": 4,
+      "title": "Номинация и 4 голоса; гость с ником TEST_A",
+      "script": {
+        "id": 178,
+        "version": "1.0.0",
+        "name": "Trouble Brewing"
+      },
+      "date": "2026-11-04T11:53:58.439Z",
+      "winner": "EVIL_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Imp",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T04_B",
+          "dealtRoleLabel": "Poisoner",
+          "finalRoleId": "poisoner",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T04_C",
+          "dealtRoleLabel": "Saint",
+          "finalRoleId": "saint",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T04_D",
+          "dealtRoleLabel": "Investigator",
+          "finalRoleId": "investigator",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T04_E",
+          "dealtRoleLabel": "Washerwoman",
+          "finalRoleId": "washerwoman",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T04_F",
+          "dealtRoleLabel": "Soldier",
+          "finalRoleId": "soldier",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "T04_A",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T04_B",
+              "role_id": "poisoner",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T04_C",
+              "role_id": "saint",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T04_D",
+              "role_id": "investigator",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T04_E",
+              "role_id": "washerwoman",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T04_F",
+              "role_id": "soldier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T04_B",
+              "role_id": "poisoner",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T04_C",
+              "role_id": "saint",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T04_D",
+              "role_id": "investigator",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T04_E",
+              "role_id": "washerwoman",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T04_F",
+              "role_id": "soldier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "f5d72b78-16fc-4e5a-9a29-36adbe56434a",
+      "caseNumber": 5,
+      "title": "Смерть → воскрешение; Professor и Zombuul в составе",
+      "script": {
+        "id": 181,
+        "version": "1.0.0",
+        "name": "Bad Moon Rising"
+      },
+      "date": "2026-11-04T11:55:02.758Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Gambler",
+          "finalRoleId": "gambler",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Zombuul",
+          "finalRoleId": "zombuul",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T05_C",
+          "dealtRoleLabel": "Professor",
+          "finalRoleId": "professor",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T05_D",
+          "dealtRoleLabel": "Chambermaid",
+          "finalRoleId": "chambermaid",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T05_E",
+          "dealtRoleLabel": "Moonchild",
+          "finalRoleId": "moonchild",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T05_F",
+          "dealtRoleLabel": "Devil's Advocate",
+          "finalRoleId": "devilsadvocate",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "zombuul",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T05_C",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T05_D",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T05_E",
+              "role_id": "moonchild",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T05_F",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "zombuul",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T05_C",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T05_D",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T05_E",
+              "role_id": "moonchild",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T05_F",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "zombuul",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T05_C",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T05_D",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T05_E",
+              "role_id": "moonchild",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T05_F",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "zombuul",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T05_C",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T05_D",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T05_E",
+              "role_id": "moonchild",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T05_F",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "645dd2cf-7e24-461a-b547-7a940e7de5f1",
+      "caseNumber": 6,
+      "title": "Drunk, Poisoned, удаление напоминания, смена команды Goon",
+      "script": {
+        "id": 181,
+        "version": "1.0.0",
+        "name": "Bad Moon Rising"
+      },
+      "date": "2026-11-04T11:57:46.421Z",
+      "winner": "EVIL_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Goon",
+          "finalRoleId": "goon",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Fool",
+          "finalRoleId": "fool",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T06_C",
+          "dealtRoleLabel": "Assassin",
+          "finalRoleId": "assassin",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T06_D",
+          "dealtRoleLabel": "Pukka",
+          "finalRoleId": "pukka",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T06_E",
+          "dealtRoleLabel": "Sailor",
+          "finalRoleId": "sailor",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T06_F",
+          "dealtRoleLabel": "Innkeeper",
+          "finalRoleId": "innkeeper",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "goon",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fool",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "sailor",
+                  "reminder": "Drunk"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "T06_C",
+              "role_id": "assassin",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T06_D",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T06_E",
+              "role_id": "sailor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T06_F",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "goon",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fool",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "sailor",
+                  "reminder": "Drunk"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "T06_C",
+              "role_id": "assassin",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T06_D",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T06_E",
+              "role_id": "sailor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T06_F",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "goon",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fool",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "sailor",
+                  "reminder": "Drunk"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "T06_C",
+              "role_id": "assassin",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T06_D",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T06_E",
+              "role_id": "sailor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T06_F",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "goon",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fool",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "sailor",
+                  "reminder": "Drunk"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "T06_C",
+              "role_id": "assassin",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T06_D",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T06_E",
+              "role_id": "sailor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T06_F",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "03b74cfc-a7ce-4403-ab18-0c5a92c4ea78",
+      "caseNumber": 7,
+      "title": "Перестановка списка, Apprentice, Angel и три блефа",
+      "script": {
+        "id": 181,
+        "version": "1.0.0",
+        "name": "Bad Moon Rising"
+      },
+      "date": "2026-11-04T12:01:55.205Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 7,
+      "travelerCountAsExported": 1,
+      "fabled": [
+        "angel"
+      ],
+      "demonBluffs": [
+        "fool",
+        "gambler",
+        "sailor"
+      ],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Grandmother",
+          "finalRoleId": "grandmother",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T07_C",
+          "dealtRoleLabel": "Pacifist",
+          "finalRoleId": "pacifist",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T07_D",
+          "dealtRoleLabel": "Shabaloth",
+          "finalRoleId": "shabaloth",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T07_E",
+          "dealtRoleLabel": "Tinker",
+          "finalRoleId": "tinker",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Mastermind",
+          "finalRoleId": "mastermind",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T07_F",
+          "dealtRoleLabel": "Courtier",
+          "finalRoleId": "courtier",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 6,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T07_TRAVELLER",
+          "dealtRoleLabel": "apprentice",
+          "finalRoleId": "apprentice",
+          "relatedRoleId": null,
+          "finalAlignment": "NEUTRAL",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_B",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T07_C",
+              "role_id": "pacifist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T07_D",
+              "role_id": "shabaloth",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T07_E",
+              "role_id": "tinker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_A",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T07_F",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "T07_TRAVELLER",
+              "role_id": "apprentice",
+              "alignment": "NEUTRAL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_B",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T07_C",
+              "role_id": "pacifist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T07_D",
+              "role_id": "shabaloth",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T07_E",
+              "role_id": "tinker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_A",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T07_F",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "T07_TRAVELLER",
+              "role_id": "apprentice",
+              "alignment": "NEUTRAL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_B",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T07_C",
+              "role_id": "pacifist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T07_D",
+              "role_id": "shabaloth",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T07_E",
+              "role_id": "tinker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_A",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T07_F",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "T07_TRAVELLER",
+              "role_id": "apprentice",
+              "alignment": "NEUTRAL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "f361ff7c-84ce-4206-8e7c-8608e8c0eae2",
+      "caseNumber": 8,
+      "title": "Klutz → злой Fang Gu, Cursed и смерти",
+      "script": {
+        "id": 180,
+        "version": "1.0.0",
+        "name": "Sects and Violets"
+      },
+      "date": "2026-11-04T12:03:48.657Z",
+      "winner": "EVIL_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Witch",
+          "finalRoleId": "witch",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Klutz",
+          "finalRoleId": "fanggu",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_C",
+          "dealtRoleLabel": "Fang Gu",
+          "finalRoleId": "fanggu",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_D",
+          "dealtRoleLabel": "Town Crier",
+          "finalRoleId": "towncrier",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_E",
+          "dealtRoleLabel": "Mutant",
+          "finalRoleId": "mutant",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_F",
+          "dealtRoleLabel": "Dreamer",
+          "finalRoleId": "dreamer",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "klutz",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "klutz",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "cac6f871-87e1-4df6-b3df-86c0e8e5f888",
+      "caseNumber": 9,
+      "title": "Перестановка между фазами, Gain Ability и смена роли",
+      "script": {
+        "id": 180,
+        "version": "1.0.0",
+        "name": "Sects and Violets"
+      },
+      "date": "2026-11-04T12:05:57.609Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
+          "databaseName": "TEST_B",
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Vigormortis",
+          "finalRoleId": "vigormortis",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T09_C",
+          "dealtRoleLabel": "Philosopher",
+          "finalRoleId": "philosopher",
+          "relatedRoleId": "oracle",
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T09_D",
+          "dealtRoleLabel": "Oracle",
+          "finalRoleId": "oracle",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T09_E",
+          "dealtRoleLabel": "Sage",
+          "finalRoleId": "sage",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
+          "databaseName": "TEST_A",
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Pit-Hag",
+          "finalRoleId": "sweetheart",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T09_F",
+          "dealtRoleLabel": "Juggler",
+          "finalRoleId": "juggler",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_B",
+              "role_id": "vigormortis",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T09_C",
+              "role_id": "philosopher",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T09_D",
+              "role_id": "oracle",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T09_E",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_A",
+              "role_id": "pithag",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T09_F",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_B",
+              "role_id": "vigormortis",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T09_C",
+              "role_id": "philosopher",
+              "related_role_id": "oracle",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T09_D",
+              "role_id": "oracle",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "philosopher",
+                  "reminder": "Drunk"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "T09_E",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_A",
+              "role_id": "sweetheart",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T09_F",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_B",
+              "role_id": "vigormortis",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T09_C",
+              "role_id": "philosopher",
+              "related_role_id": "oracle",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T09_D",
+              "role_id": "oracle",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "philosopher",
+                  "reminder": "Drunk"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "T09_E",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_A",
+              "role_id": "sweetheart",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T09_F",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_B",
+              "role_id": "vigormortis",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "T09_C",
+              "role_id": "philosopher",
+              "related_role_id": "oracle",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T09_D",
+              "role_id": "oracle",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "philosopher",
+                  "reminder": "Drunk"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "T09_E",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "TEST_A",
+              "role_id": "sweetheart",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T09_F",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "1571e914-bf22-4dc0-b895-a2bb2c92edb0",
+      "caseNumber": 10,
+      "title": "Переход назад/вперёд по фазам, совпадающие ники, русский экспорт",
+      "script": {
+        "id": 180,
+        "version": "1.0.0",
+        "name": "Sects and Violets"
+      },
+      "date": "2026-11-04T12:10:46.501Z",
+      "winner": "EVIL_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "mathematician",
+          "finalRoleId": "mathematician",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "flowergirl",
+          "finalRoleId": "flowergirl",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T10_C",
+          "dealtRoleLabel": "Savant",
+          "finalRoleId": "savant",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T10_D",
+          "dealtRoleLabel": "Cerenovus",
+          "finalRoleId": "cerenovus",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T10_E",
+          "dealtRoleLabel": "Sweetheart",
+          "finalRoleId": "sweetheart",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T10_F",
+          "dealtRoleLabel": "No Dashii",
+          "finalRoleId": "nodashii",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "mathematician",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "cerenovus",
+                  "reminder": "Mad"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "flowergirl",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T10_C",
+              "role_id": "savant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "nodashii",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "T10_D",
+              "role_id": "cerenovus",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T10_E",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T10_F",
+              "role_id": "nodashii",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "mathematician",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "cerenovus",
+                  "reminder": "Mad"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "flowergirl",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T10_C",
+              "role_id": "savant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "nodashii",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "T10_D",
+              "role_id": "cerenovus",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T10_E",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T10_F",
+              "role_id": "nodashii",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "mathematician",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "cerenovus",
+                  "reminder": "Mad"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "flowergirl",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T10_C",
+              "role_id": "savant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "nodashii",
+                  "reminder": "Poisoned"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "T10_D",
+              "role_id": "cerenovus",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T10_E",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T10_F",
+              "role_id": "nodashii",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "mathematician",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "cerenovus",
+                  "reminder": "Помешан"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_A",
+              "role_id": "flowergirl",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T10_C",
+              "role_id": "savant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "nodashii",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "T10_D",
+              "role_id": "cerenovus",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "T10_E",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T10_F",
+              "role_id": "nodashii",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
