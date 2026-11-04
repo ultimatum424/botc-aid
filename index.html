@@ -13,9 +13,9 @@
   <main>
     <header>
       <div><span class="eyebrow">BLOOD ON THE CLOCKTOWER</span><h1>BOTC Aid <span>Статистика</span></h1></div>
-      <a class="button" href="./data/dataset.json" download="botc-test-games.json">Скачать JSON</a>
+      <a class="button" href="./data/dataset.json" download="botc-games.json">Скачать JSON</a>
     </header>
-    <p class="notice"><strong>Тестовые данные.</strong> Десять проверок Android-приложения. Игроки вымышлены, победители назначены для тестов.</p>
+    <p id="test-notice" class="notice" hidden><strong>Тестовые данные.</strong> Игроки вымышлены, победители назначены для тестов.</p>
     <p id="status" role="status">Загружаем игры…</p>
     <div id="content" hidden>
       <section aria-label="Общая статистика" id="overview" class="metrics"></section>
@@ -28,6 +28,7 @@
       <section aria-labelledby="games-heading">
         <div class="section-heading"><h2 id="games-heading">Игры</h2><span id="game-count" class="muted"></span></div>
         <div class="filters">
+          <label>Данные<select id="type-filter" aria-label="Данные"><option value="real">Реальные игры</option><option value="test">Тестовые игры</option><option value="all">Все игры</option></select></label>
           <label>Сценарий<select id="script-filter" aria-label="Сценарий"><option value="">Все сценарии</option></select></label>
           <label>Профиль<select id="player-filter" aria-label="Профиль"><option value="">Все игроки и гости</option></select></label>
           <button id="reset" type="button" class="button">Сбросить</button>
