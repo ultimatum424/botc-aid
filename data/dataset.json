@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
   "isTest": true,
-  "datasetId": "android-live-2026-11-04",
-  "generatedAt": "2026-11-04T22:37:44.081Z",
+  "datasetId": "main",
+  "generatedAt": "2026-11-04T23:28:17.558Z",
+  "publicationRevision": 1,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -17,12 +18,12 @@
       "name": "TEST_C"
     },
     {
-      "publicId": "882a1e82-08e6-4909-842d-2daf626c47bc",
-      "name": "TEST_D"
-    },
-    {
       "publicId": "826ad3f5-db22-4336-a2c5-f5be9106663f",
       "name": "TEST_E"
+    },
+    {
+      "publicId": "882a1e82-08e6-4909-842d-2daf626c47bc",
+      "name": "TEST_D"
     },
     {
       "publicId": "f40759a9-bac0-4610-b3d3-7d1bb654f9d1",
@@ -3313,6 +3314,356 @@
               "player_name": "T10_F",
               "role_id": "nodashii",
               "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": true,
+      "gameId": "5693b528-c4f0-4b6d-abbe-76e53b697846",
+      "caseNumber": null,
+      "title": "Тестовая игра",
+      "script": {
+        "id": 180,
+        "version": "1.0.0",
+        "name": "Sects and Violets"
+      },
+      "date": "2026-11-04T12:03:48.657Z",
+      "winner": "EVIL_WINS",
+      "playerCountAsExported": 6,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "TEST_A",
+          "dealtRoleLabel": "Witch",
+          "finalRoleId": "witch",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "TEST_B",
+          "dealtRoleLabel": "Klutz",
+          "finalRoleId": "fanggu",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_C",
+          "dealtRoleLabel": "Fang Gu",
+          "finalRoleId": "fanggu",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_D",
+          "dealtRoleLabel": "Town Crier",
+          "finalRoleId": "towncrier",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_E",
+          "dealtRoleLabel": "Mutant",
+          "finalRoleId": "mutant",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "T08_F",
+          "dealtRoleLabel": "Dreamer",
+          "finalRoleId": "dreamer",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "klutz",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "klutz",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "TEST_A",
+              "role_id": "witch",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "TEST_B",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "T08_C",
+              "role_id": "fanggu",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "T08_D",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "witch",
+                  "reminder": "Cursed"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "T08_E",
+              "role_id": "mutant",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "T08_F",
+              "role_id": "dreamer",
+              "alignment": "GOOD",
               "is_dead": false,
               "used_ghost_vote": false,
               "reminders": []
