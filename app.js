@@ -1,4 +1,5 @@
 import {summarize,filterGames} from './model.mjs';
+import {renderGrimoire} from './grimoire.mjs';
 
 const $=id=>document.getElementById(id);
 const alignments={GOOD:'Добро',EVIL:'Зло',NEUTRAL:'Нейтральная'};
@@ -13,8 +14,10 @@ const roles={poisoner:'Отравитель',washerwoman:'Прачка',slayer:'
   snakecharmer:'Заклинатель змей',witch:'Ведьма',pithag:'Ведьма ямы',sweetheart:'Милочка',
   cerenovus:'Цереновус',dreamer:'Сновидец',artist:'Художник',seamstress:'Швея',sage:'Мудрец',mathematician:'Математик',
   librarian:'Библиотекарь',butler:'Дворецкий',monk:'Монах',undertaker:'Гробовщик',virgin:'Девственница',
-  scarletwoman:'Алая женщина',spy:'Шпион',soldier:'Солдат',mayor:'Мэр',investigator:'Следователь'};
-const role=value=>roles[value]??roles[String(value??'').toLowerCase().replace(/[\s_-]+/g,'')]??value??'—';
+  scarletwoman:'Алая женщина',spy:'Шпион',soldier:'Солдат',mayor:'Мэр',investigator:'Следователь',
+  juggler:'Жонглёр',courtier:'Придворный',assassin:'Ассасин',flowergirl:'Цветочница',innkeeper:'Трактирщик',
+  mastermind:'Кукловод',mutant:'Мутант',nodashii:'Но Даши',pukka:'Пукка',savant:'Учёный',shabaloth:'Шабалот',tinker:'Лудильщик',towncrier:'Глашатай'};
+const role=value=>roles[value]??roles[String(value??'').toLowerCase().replace(/[\s_'’\-]+/g,'')]??value??'—';
 const node=(tag,text,className)=>{const el=document.createElement(tag);if(text!=null)el.textContent=String(text);if(className)el.className=className;return el;};
 function tag(text,team){return node('span',text,`tag ${team==='GOOD'||team==='GOOD_WINS'?'good':team==='EVIL'||team==='EVIL_WINS'?'evil':'neutral'}`);}
 function table(headers,rows){
@@ -24,6 +27,15 @@ function table(headers,rows){
 }
 function profileCell(p){const cell=node('span');cell.append(node('span',p.gameNickname));cell.append(node('br'));
   cell.append(node('span',p.publicId?`Профиль: ${p.databaseName}`:'Гость · без привязки',p.publicId?'small':'guest'));return cell;}
+function roleChain(p){
+  const chain=node('div',null,'role-chain');
+  const entries=[{name:role(p.dealtRoleLabel),title:'При раздаче'},
+    {name:role(p.finalRoleId),title:'В конце'},
+    ...(p.relatedRoleId?[{name:role(p.relatedRoleId),title:'Связанная роль / способность'}]:[])];
+  const unique=entries.filter((entry,i)=>i===0||entry.name.toLowerCase()!==entries[i-1].name.toLowerCase());
+  unique.forEach((entry,i)=>{if(i){const arrow=node('span','→','role-arrow');arrow.setAttribute('aria-hidden','true');chain.append(arrow);}const pill=tag(entry.name,p.finalAlignment);pill.title=entry.title;chain.append(pill);});
+  chain.setAttribute('aria-label',unique.map(e=>`${e.title}: ${e.name}`).join(' → '));return chain;
+}
 function dateLabel(value){const date=new Date(value);return Number.isNaN(date.valueOf())?value:date.toLocaleDateString('ru-RU',{dateStyle:'medium'});}
 function countLabel(value,one,few,many){const n=Math.abs(value)%100,last=n%10;return `${value} ${n>10&&n<20?many:last===1?one:last>1&&last<5?few:many}`;}
 function gameCard(game){
@@ -33,17 +45,23 @@ function gameCard(game){
   title.append(node('div',`${countLabel(game.participants.length,'игрок','игрока','игроков')} · ${countLabel(game.snapshots.length,'страница гримуара','страницы гримуара','страниц гримуара')}`,'game-subtitle'));
   summary.append(title,tag(winners[game.winner]??game.winner,game.winner));details.append(summary);
   const body=node('div',null,'game-body');if(game.title)body.append(node('p',game.title,'notes'));body.append(node('h3','Итоговый состав'));
-  body.append(table(['Место','Игрок / профиль','Начальная роль','Финальная'],game.participants.map(p=>[
-    p.order+1,profileCell(p),tag(role(p.dealtRoleLabel),p.finalAlignment),
-    tag(role(p.finalRoleId)+(p.relatedRoleId?` → ${role(p.relatedRoleId)}`:''),p.finalAlignment)])));
+  const roster=table(['Место','Игрок / профиль','Роли'],game.participants.map(p=>[
+    p.order+1,profileCell(p),roleChain(p)]));roster.classList.add('roster-table');body.append(roster);
   if(game.fabled.length || game.demonBluffs.length || game.travelerCountAsExported){
     body.append(node('p',`Путешественников: ${game.travelerCountAsExported}. Легендарные: ${game.fabled.map(role).join(', ')||'—'}. Блефы Демона: ${game.demonBluffs.map(role).join(', ')||'—'}.`,'notes'));
   }
   const controls=node('div',null,'snapshot-control'),label=node('label','Гримуар'),select=node('select');select.setAttribute('aria-label',`Страница гримуара игры ${game.caseNumber}`);
   for(const page of game.snapshots){const option=node('option',`Страница ${page.index+1}`);option.value=String(page.index);select.append(option);}
   select.value=String(game.snapshots.at(-1).index);label.append(select);controls.append(label,node('p','Номера страниц — последовательность сохранённых состояний.','hint'));body.append(controls);
+  const modes=node('div',null,'grim-modes');let visual=true;
+  const tokensButton=node('button','Жетоны','button'),tableButton=node('button','Таблица','button');
+  tokensButton.type=tableButton.type='button';modes.append(tokensButton,tableButton);controls.append(modes);
   const snapshot=node('div');body.append(snapshot);
-  function renderSnapshot(){const page=game.snapshots.find(p=>p.index===Number(select.value));snapshot.replaceChildren(table(['Место','Игровой ник','Роль / способность','Команда','Состояние','Голос мёртвого','Напоминания'],page.tokens.map(t=>[
+  tokensButton.onclick=()=>{visual=true;renderSnapshot();};tableButton.onclick=()=>{visual=false;renderSnapshot();};
+  function renderSnapshot(){const page=game.snapshots.find(p=>p.index===Number(select.value));
+    tokensButton.setAttribute('aria-pressed',String(visual));tableButton.setAttribute('aria-pressed',String(!visual));
+    if(visual){snapshot.replaceChildren(renderGrimoire(page,role));return;}
+    snapshot.replaceChildren(table(['Место','Игровой ник','Роль / способность','Команда','Состояние','Голос мёртвого','Напоминания'],page.tokens.map(t=>[
     t.order+1,t.player_name,role(t.role_id)+(t.related_role_id?` → ${role(t.related_role_id)}`:''),tag(alignments[t.alignment]??t.alignment,t.alignment),
     t.is_dead?'Мёртв':'Жив',t.used_ghost_vote?'Использован':'Не использован',t.reminders.map(r=>`${r.reminder} (${role(r.role_id)})`).join('; ')||'—'])));}
   select.addEventListener('change',renderSnapshot);renderSnapshot();
