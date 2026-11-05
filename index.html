@@ -13,34 +13,33 @@
   <main>
     <header>
       <div><span class="eyebrow">BLOOD ON THE CLOCKTOWER</span><h1>BOTC Aid <span>Статистика</span></h1></div>
-      <a class="button" href="./data/dataset.json" download="botc-games.json">Скачать JSON</a>
     </header>
     <p id="test-notice" class="notice" hidden><strong>Тестовые данные.</strong> Игроки вымышлены, победители назначены для тестов.</p>
     <p id="status" role="status">Загружаем игры…</p>
     <div id="content" hidden>
-      <section aria-label="Общая статистика" id="overview" class="metrics"></section>
-      <p id="results" class="muted"></p>
-      <section aria-labelledby="players-heading">
-        <div class="section-heading"><h2 id="players-heading">Игроки</h2><span class="muted">Сводка по итоговому состоянию</span></div>
-        <div class="table-wrap"><table><thead><tr><th scope="col">Профиль</th><th scope="col">Игр</th><th scope="col">Мёртв в конце</th><th scope="col">Голос мёртвого использован</th><th scope="col">Роли в конце партий</th></tr></thead><tbody id="players"></tbody></table></div>
-        <p class="hint">В статистику профиля попадают только участники с привязанным publicId. Совпадение игрового ника с именем профиля не создаёт связь.</p>
-      </section>
-      <section aria-labelledby="games-heading">
-        <div class="section-heading"><h2 id="games-heading">Игры</h2><span id="game-count" class="muted"></span></div>
-        <div class="filters">
-          <label>Данные<select id="type-filter" aria-label="Данные"><option value="real">Реальные игры</option><option value="test">Тестовые игры</option><option value="all">Все игры</option></select></label>
-          <label>Сценарий<select id="script-filter" aria-label="Сценарий"><option value="">Все сценарии</option></select></label>
-          <label>Профиль<select id="player-filter" aria-label="Профиль"><option value="">Все игроки и гости</option></select></label>
-          <button id="reset" type="button" class="button">Сбросить</button>
-        </div>
-        <div id="games"></div>
-      </section>
-      <details class="method"><summary>Как читать эти данные</summary>
-        <p>Результат команды взят из ClockTracker. Личные победы и процент побед пока не рассчитываются: правило для игроков, сменивших команду, ещё не выбрано.</p>
-        <p>Страницы гримуара показывают сохранённые состояния стола. Их номера не означают точный день или ночь. Исторические жетоны отображаются с игровыми никами без догадки о привязке к профилю после перестановок.</p>
-        <p>Напоминания передаются в том виде, в котором их сохранил сайт. Это отметки рассказчика, а не автоматическое доказательство применения способности. В экспорте нет полного журнала номинаций, количества голосов, причин смерти и точного времени действий.</p>
-        <p>Гости видны в составе партии, но не объединяются между играми. Traveller уже входит в число участников этих выгрузок.</p>
-      </details>
+      <nav class="tabs" role="tablist" aria-label="Разделы статистики">
+        <button id="games-tab" class="tab" type="button" role="tab" aria-selected="true" aria-controls="games-panel">Игры</button>
+        <button id="players-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="players-panel" tabindex="-1">Игроки</button>
+      </nav>
+      <div id="games-panel" role="tabpanel" aria-labelledby="games-tab">
+        <section aria-labelledby="games-heading">
+          <div class="section-heading"><h2 id="games-heading">Игры</h2><span id="game-count" class="muted"></span></div>
+          <div class="filters">
+            <label>Данные<select id="type-filter" aria-label="Данные"><option value="real">Реальные игры</option><option value="test">Тестовые игры</option><option value="all">Все игры</option></select></label>
+            <label>Сценарий<select id="script-filter" aria-label="Сценарий"><option value="">Все сценарии</option></select></label>
+            <label>Профиль<select id="player-filter" aria-label="Профиль"><option value="">Все игроки и гости</option></select></label>
+            <button id="reset" type="button" class="button">Сбросить</button>
+          </div>
+          <div id="games"></div>
+        </section>
+      </div>
+      <div id="players-panel" role="tabpanel" aria-labelledby="players-tab" hidden>
+        <section aria-labelledby="players-heading">
+          <div class="section-heading"><h2 id="players-heading">Игроки</h2><span class="muted">Сводка по итоговому состоянию</span></div>
+          <div class="table-wrap"><table><thead><tr><th scope="col">Профиль</th><th scope="col">Игр</th><th scope="col">Мёртв в конце</th><th scope="col">Голос мёртвого использован</th><th scope="col">Роли в конце партий</th></tr></thead><tbody id="players"></tbody></table></div>
+          <p class="hint">В статистику профиля попадают только участники с привязанным publicId. Совпадение игрового ника с именем профиля не создаёт связь.</p>
+        </section>
+      </div>
       <footer id="updated" class="muted"></footer>
     </div>
   </main>

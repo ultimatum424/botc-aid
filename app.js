@@ -3,7 +3,7 @@ import {summarize,filterGames} from './model.mjs';
 const $=id=>document.getElementById(id);
 const alignments={GOOD:'Добро',EVIL:'Зло',NEUTRAL:'Нейтральная'};
 const winners={GOOD_WINS:'Победа добра',EVIL_WINS:'Победа зла',NOT_RECORDED:'Результат не указан'};
-// Display aliases only. Machine role IDs are retained unchanged in the downloadable JSON.
+// Display aliases only. Machine role IDs in the generated dataset stay unchanged.
 const roles={poisoner:'Отравитель',washerwoman:'Прачка',slayer:'Истребитель',recluse:'Затворник',imp:'Бес',empath:'Эмпат',
   fortune_teller:'Гадалка',fortuneteller:'Гадалка',ravenkeeper:'Хранитель воронов',drunk:'Пьяница',chef:'Повар',baron:'Барон',
   professor:'Профессор',zombuul:'Зомбуль',goon:'Головорез',apprentice:'Подмастерье',angel:'Ангел',klutz:'Неуклюжий',
@@ -14,7 +14,7 @@ const roles={poisoner:'Отравитель',washerwoman:'Прачка',slayer:'
   cerenovus:'Цереновус',dreamer:'Сновидец',artist:'Художник',seamstress:'Швея',sage:'Мудрец',mathematician:'Математик',
   librarian:'Библиотекарь',butler:'Дворецкий',monk:'Монах',undertaker:'Гробовщик',virgin:'Девственница',
   scarletwoman:'Алая женщина',spy:'Шпион',soldier:'Солдат',mayor:'Мэр',investigator:'Следователь'};
-const role=value=>roles[value]??value??'—';
+const role=value=>roles[value]??roles[String(value??'').toLowerCase().replace(/[\s_-]+/g,'')]??value??'—';
 const node=(tag,text,className)=>{const el=document.createElement(tag);if(text!=null)el.textContent=String(text);if(className)el.className=className;return el;};
 function tag(text,team){return node('span',text,`tag ${team==='GOOD'||team==='GOOD_WINS'?'good':team==='EVIL'||team==='EVIL_WINS'?'evil':'neutral'}`);}
 function table(headers,rows){
@@ -24,17 +24,18 @@ function table(headers,rows){
 }
 function profileCell(p){const cell=node('span');cell.append(node('span',p.gameNickname));cell.append(node('br'));
   cell.append(node('span',p.publicId?`Профиль: ${p.databaseName}`:'Гость · без привязки',p.publicId?'small':'guest'));return cell;}
-function dateLabel(value){const date=new Date(value);return Number.isNaN(date.valueOf())?value:date.toLocaleString('ru-RU',{dateStyle:'short',timeStyle:'short'});}
+function dateLabel(value){const date=new Date(value);return Number.isNaN(date.valueOf())?value:date.toLocaleDateString('ru-RU',{dateStyle:'medium'});}
+function countLabel(value,one,few,many){const n=Math.abs(value)%100,last=n%10;return `${value} ${n>10&&n<20?many:last===1?one:last>1&&last<5?few:many}`;}
 function gameCard(game){
   const details=node('details',null,'game');details.id=`game-${game.gameId}`;
   const summary=node('summary'),title=node('div',null,'game-title-wrap');
-  title.append(node('div',`${game.caseNumber?`#${String(game.caseNumber).padStart(2,'0')}`:game.gameId.slice(0,8)} · ${game.script.name}${game.isTest?' · тест':''}`,'game-title'));
-  title.append(node('div',`${dateLabel(game.date)} · ${game.participants.length} участников · ${game.snapshots.length} страниц`,'game-subtitle'));
+  title.append(node('div',`${dateLabel(game.date)} · ${game.script.name}`,'game-title'));
+  title.append(node('div',`${countLabel(game.participants.length,'игрок','игрока','игроков')} · ${countLabel(game.snapshots.length,'страница гримуара','страницы гримуара','страниц гримуара')}`,'game-subtitle'));
   summary.append(title,tag(winners[game.winner]??game.winner,game.winner));details.append(summary);
   const body=node('div',null,'game-body');if(game.title)body.append(node('p',game.title,'notes'));body.append(node('h3','Итоговый состав'));
-  body.append(table(['Место','Игрок / профиль','При раздаче','В конце','Команда','Состояние','Голос мёртвого'],game.participants.map(p=>[
-    p.order+1,profileCell(p),p.dealtRoleLabel??'—',role(p.finalRoleId)+(p.relatedRoleId?` → ${role(p.relatedRoleId)}`:''),
-    tag(alignments[p.finalAlignment]??p.finalAlignment,p.finalAlignment),p.isDead?'Мёртв':'Жив',p.usedGhostVote?'Использован':'Не использован'])));
+  body.append(table(['Место','Игрок / профиль','Начальная роль','Финальная'],game.participants.map(p=>[
+    p.order+1,profileCell(p),tag(role(p.dealtRoleLabel),p.finalAlignment),
+    tag(role(p.finalRoleId)+(p.relatedRoleId?` → ${role(p.relatedRoleId)}`:''),p.finalAlignment)])));
   if(game.fabled.length || game.demonBluffs.length || game.travelerCountAsExported){
     body.append(node('p',`Путешественников: ${game.travelerCountAsExported}. Легендарные: ${game.fabled.map(role).join(', ')||'—'}. Блефы Демона: ${game.demonBluffs.map(role).join(', ')||'—'}.`,'notes'));
   }
@@ -48,7 +49,24 @@ function gameCard(game){
   select.addEventListener('change',renderSnapshot);renderSnapshot();
   body.append(node('p',`ID игры: ${game.gameId}`,'muted small'));details.append(body);return details;
 }
-let currentData=null,currentHash=null,loading=false,explicitType=false;
+let currentData=null,currentHash=null,loading=false,explicitType=false,activeTab='games';
+function setActiveTab(name,{focus=false}={}){
+  activeTab=name==='players'?'players':'games';
+  for(const tabName of ['games','players']){
+    const selected=tabName===activeTab,tab=$(`${tabName}-tab`),panel=$(`${tabName}-panel`);
+    tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;panel.hidden=!selected;
+  }
+  if(focus)$(`${activeTab}-tab`).focus();
+}
+for(const tabName of ['games','players']){
+  $(`${tabName}-tab`).addEventListener('click',()=>setActiveTab(tabName));
+  $(`${tabName}-tab`).addEventListener('keydown',event=>{
+    if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+    event.preventDefault();
+    const next=event.key==='Home'?'games':event.key==='End'?'players':tabName==='games'?'players':'games';
+    setActiveTab(next,{focus:true});
+  });
+}
 function renderPage(dataset){
   const oldScript=$('script-filter').value,oldPlayer=$('player-filter').value;
   if(!explicitType)$('type-filter').value=dataset.games.some(g=>!g.isTest)?'real':'test';
@@ -56,15 +74,12 @@ function renderPage(dataset){
   const data={...dataset,games:dataset.games.filter(g=>mode==='all' || (mode==='test')===g.isTest)};
   $('test-notice').hidden=!data.games.some(g=>g.isTest);
   const stats=summarize(data);
-  $('overview').replaceChildren();$('players').replaceChildren();
+  $('players').replaceChildren();
   $('script-filter').replaceChildren(node('option','Все сценарии'));$('script-filter').firstChild.value='';
   $('player-filter').replaceChildren(node('option','Все игроки и гости'));$('player-filter').firstChild.value='';
-  for(const [count,label] of [[stats.gameCount,'игр'],[data.players.length,'профилей в базе'],[stats.identified,'участий с профилем'],[stats.snapshots,'страниц гримуара']]){
-    const box=node('div',null,'metric');box.append(node('strong',count),node('span',label));$('overview').append(box);}
-  $('results').textContent=`Добро: ${stats.good} побед · Зло: ${stats.evil} побед · Без результата: ${stats.unknown} · Всего участий: ${stats.totalParticipants}, из них гостей: ${stats.guests}`;
   for(const player of stats.players){
     const row=node('tr'),button=node('button',player.name,'profile-link');button.type='button';button.title=player.publicId;
-    button.addEventListener('click',()=>{$('player-filter').value=player.publicId;renderGames();$('games-heading').scrollIntoView({behavior:'smooth'});});
+    button.addEventListener('click',()=>{$('player-filter').value=player.publicId;renderGames();setActiveTab('games');$('games-heading').scrollIntoView({behavior:'smooth'});});
     const name=node('td');name.append(button);row.append(name);
     for(const value of [player.games,player.dead,player.ghostVotes,Object.entries(player.roles).map(([r,n])=>`${role(r)}${n>1?` ×${n}`:''}`).join(', ')||'—'])row.append(node('td',value));
     row.lastChild.className='role-list';$('players').append(row);
@@ -78,7 +93,7 @@ function renderPage(dataset){
     $('games').replaceChildren(...(games.length?games.map(gameCard):[node('p','Нет игр с выбранными фильтрами.','empty')]));}
   $('script-filter').onchange=renderGames;$('player-filter').onchange=renderGames;
   $('reset').onclick=()=>{$('script-filter').value='';$('player-filter').value='';renderGames();};
-  renderGames();$('updated').textContent=`Данные Firebase: ${dateLabel(data.generatedAt)}. Страница проверяет обновления автоматически.`;
+  renderGames();setActiveTab(activeTab);$('updated').textContent=`Данные от ${dateLabel(data.generatedAt)}`;
   $('status').hidden=true;$('content').hidden=false;
 }
 async function load(){
@@ -99,7 +114,6 @@ async function load(){
     $('content').dataset.revision=String(data.publicationRevision??0);
     $('content').dataset.sha256=currentHash??'';
     $('content').querySelectorAll('details.game').forEach(card=>{if(card.id===location.hash.slice(1))card.open=true;});
-    document.querySelector('a[download]').href=`./data/dataset.json?v=${currentHash??Date.now()}`;
   } catch {
     $('status').hidden=false;$('status').textContent=currentData?'Не удалось обновить данные. Показана предыдущая версия; повторим автоматически.':'Не удалось загрузить статистику. Повторим автоматически; можно обновить страницу.';
   } finally {loading=false;}
