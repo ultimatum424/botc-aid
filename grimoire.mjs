@@ -33,9 +33,25 @@ export function renderGrimoire(page,role){
     seat.append(face,name);
     if(t.used_ghost_vote)seat.append(el('span','ghost-status','Голос использован'));
     const reminders=el('div','seat-reminders');
-    for(const r of t.reminders||[]){const badge=el('button','reminder-badge');badge.type='button';badge.title=`${role(r.role_id)}: ${r.reminder}`;badge.setAttribute('aria-label',badge.title);badge.append(art(r.role_id,role(r.role_id)),el('span','',r.reminder));badge.onclick=()=>{badge.classList.toggle('expanded');};reminders.append(badge);}
+    for (const reminder of t.reminders || []) {
+      const badge = el('button', 'reminder-badge');
+      badge.type = 'button';
+      const roleName = role(reminder.role_id);
+      const fullText = reminder.role_id ? `${roleName}: ${reminder.reminder}` : reminder.reminder;
+      const label = el('span', '', reminder.reminder);
+      badge.title = fullText;
+      badge.setAttribute('aria-label', fullText);
+      badge.setAttribute('aria-expanded', 'false');
+      badge.append(art(reminder.role_id, roleName), label);
+      badge.onclick = () => {
+        const expanded = badge.classList.toggle('expanded');
+        badge.setAttribute('aria-expanded', String(expanded));
+        label.textContent = expanded ? fullText : reminder.reminder;
+      };
+      reminders.append(badge);
+    }
     seat.append(reminders);board.append(seat);
   });
-  const legend=el('p','grim-legend','Синий ободок — добро · красный — зло · саван — мёртв. Нажми на напоминание, чтобы развернуть текст.');
+  const legend=el('p','grim-legend','Синий ободок — добро · красный — зло · саван — мёртв. Нажми на напоминание, чтобы увидеть его роль и полный текст.');
   wrap.append(board,legend);return wrap;
 }
