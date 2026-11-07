@@ -16,16 +16,14 @@ function art(id,label){
   img.onerror=()=>{img.remove();fallback.hidden=false;};fallback.hidden=true;box.append(fallback,img);return box;
 }
 export function renderGrimoire(page,role){
-  const wrap=el('div','grimoire-view'),board=el('div','grim-board');
+  const wrap=el('div','grimoire-view'),board=el('div','grim-board grim-board-orbit');
   const tokens=[...page.tokens].sort((a,b)=>a.order-b.order),n=tokens.length;
-  if (tokens.some(token => (token.reminders?.length ?? 0) >= 3)) {
-    board.classList.add('grim-board-dense');
-  }
   board.style.setProperty('--seat-count',n);
   const center=el('div','grim-center');center.append(el('span','grim-page-number',String(page.index+1)),el('span','','Страница гримуара'));board.append(center);
   tokens.forEach((t,i)=>{
     const seat=el('article','grim-seat');const angle=-Math.PI/2+2*Math.PI*i/n;
-    seat.style.setProperty('--x',`${50+39*Math.cos(angle)}%`);seat.style.setProperty('--y',`${50+39*Math.sin(angle)}%`);
+    seat.style.setProperty('--x', `${50 + 39 * Math.cos(angle)}%`);
+    seat.style.setProperty('--orbit-y', `${331 * Math.sin(angle)}px`);
     const team=t.alignment==='GOOD'?'good':t.alignment==='EVIL'?'evil':'neutral';
     const face=el('div',`role-token team-${team}${t.is_dead?' is-dead':''}`);
     face.append(art(t.role_id,role(t.role_id)),curvedLabel(String(role(t.role_id))));

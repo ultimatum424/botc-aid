@@ -1,5 +1,5 @@
 import {summarize,filterGames} from './model.mjs';
-import {renderGrimoire} from './grimoire.mjs?v=4';
+import {renderGrimoire} from './grimoire.mjs?v=5';
 
 const $=id=>document.getElementById(id);
 const alignments={GOOD:'Добро',EVIL:'Зло',NEUTRAL:'Нейтральная'};
