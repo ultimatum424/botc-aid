@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-07T19:00:05.217Z",
-  "publicationRevision": 5,
+  "generatedAt": "2026-11-07T22:03:26.006Z",
+  "publicationRevision": 6,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -15,7 +15,7 @@
     },
     {
       "publicId": "5c06ecaa-39f8-410d-9a49-d3d56ba12230",
-      "name": "nikitosss67"
+      "name": "nikitoSS67"
     },
     {
       "publicId": "5e6d1207-e4b5-461c-b29a-d395b7d1f1b1",
@@ -39,11 +39,11 @@
     },
     {
       "publicId": "a5f9a399-ee80-4138-83b7-402d499757df",
-      "name": "bubenchik"
+      "name": "Bubenchik"
     },
     {
       "publicId": "abae6065-7433-4b84-b00d-9fcc42e62535",
-      "name": "deny_kisa"
+      "name": "Deny_kisa"
     },
     {
       "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
@@ -108,7 +108,7 @@
         {
           "order": 2,
           "publicId": "abae6065-7433-4b84-b00d-9fcc42e62535",
-          "databaseName": "deny_kisa",
+          "databaseName": "Deny_kisa",
           "gameNickname": "Дени",
           "dealtRoleLabel": "grandmother",
           "finalRoleId": "grandmother",
@@ -132,7 +132,7 @@
         {
           "order": 4,
           "publicId": "5c06ecaa-39f8-410d-9a49-d3d56ba12230",
-          "databaseName": "nikitosss67",
+          "databaseName": "nikitoSS67",
           "gameNickname": "nikitosss67",
           "dealtRoleLabel": "Азартный Игрок",
           "finalRoleId": "gambler",
@@ -156,7 +156,7 @@
         {
           "order": 6,
           "publicId": "a5f9a399-ee80-4138-83b7-402d499757df",
-          "databaseName": "bubenchik",
+          "databaseName": "Bubenchik",
           "gameNickname": "bubenchik",
           "dealtRoleLabel": "Экзорцист",
           "finalRoleId": "exorcist",
