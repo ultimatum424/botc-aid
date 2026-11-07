@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-07T22:13:01.832Z",
-  "publicationRevision": 7,
+  "generatedAt": "2026-11-07T22:13:07.240Z",
+  "publicationRevision": 8,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -183,8 +183,8 @@
         },
         {
           "order": 8,
-          "publicId": null,
-          "databaseName": null,
+          "publicId": "260c8743-8504-44a1-9ced-83f10bb6ad22",
+          "databaseName": "ultimatum",
           "gameNickname": "Австрийский автопром",
           "dealtRoleLabel": "Пукка",
           "finalRoleId": "pukka",
