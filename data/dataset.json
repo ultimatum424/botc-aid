@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "isTest": true,
+  "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-04T23:36:54.082Z",
-  "publicationRevision": 3,
+  "generatedAt": "2026-11-07T19:00:05.217Z",
+  "publicationRevision": 5,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -12,6 +12,14 @@
     {
       "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
       "name": "TEST_B"
+    },
+    {
+      "publicId": "5c06ecaa-39f8-410d-9a49-d3d56ba12230",
+      "name": "nikitosss67"
+    },
+    {
+      "publicId": "5e6d1207-e4b5-461c-b29a-d395b7d1f1b1",
+      "name": "alexey2"
     },
     {
       "publicId": "6551504d-a7b8-4963-88e9-e1bf3180ab8f",
@@ -26,11 +34,1778 @@
       "name": "TEST_D"
     },
     {
+      "publicId": "98feeda4-fdde-41bd-ba1b-c562aae16c3e",
+      "name": "fortel"
+    },
+    {
+      "publicId": "a5f9a399-ee80-4138-83b7-402d499757df",
+      "name": "bubenchik"
+    },
+    {
+      "publicId": "abae6065-7433-4b84-b00d-9fcc42e62535",
+      "name": "deny_kisa"
+    },
+    {
+      "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
+      "name": "izvini'da"
+    },
+    {
+      "publicId": "e60098b9-4e05-4b59-a9b0-efbe123e0dce",
+      "name": "obliseyouv20"
+    },
+    {
       "publicId": "f40759a9-bac0-4610-b3d3-7d1bb654f9d1",
       "name": "TEST_F"
     }
   ],
   "games": [
+    {
+      "schemaVersion": 1,
+      "isTest": false,
+      "gameId": "ed9d753d-0ede-4ced-a39b-501265319c46",
+      "caseNumber": null,
+      "title": "",
+      "script": {
+        "id": 181,
+        "version": "1.0.0",
+        "name": "Bad Moon Rising"
+      },
+      "date": "2026-11-07T18:59:50.599Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 10,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [
+        "tealady",
+        "lunatic",
+        "chambermaid"
+      ],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "e60098b9-4e05-4b59-a9b0-efbe123e0dce",
+          "databaseName": "obliseyouv20",
+          "gameNickname": "obliseyouv20",
+          "dealtRoleLabel": "Кукловод",
+          "finalRoleId": "mastermind",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Дима",
+          "dealtRoleLabel": "Придворный",
+          "finalRoleId": "courtier",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": true
+        },
+        {
+          "order": 2,
+          "publicId": "abae6065-7433-4b84-b00d-9fcc42e62535",
+          "databaseName": "deny_kisa",
+          "gameNickname": "Дени",
+          "dealtRoleLabel": "grandmother",
+          "finalRoleId": "grandmother",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
+          "databaseName": "izvini'da",
+          "gameNickname": "izvini'da",
+          "dealtRoleLabel": "Трактирщик",
+          "finalRoleId": "innkeeper",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": "5c06ecaa-39f8-410d-9a49-d3d56ba12230",
+          "databaseName": "nikitosss67",
+          "gameNickname": "nikitosss67",
+          "dealtRoleLabel": "Азартный Игрок",
+          "finalRoleId": "gambler",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Борис-Животное",
+          "dealtRoleLabel": "Сплетница",
+          "finalRoleId": "gossip",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 6,
+          "publicId": "a5f9a399-ee80-4138-83b7-402d499757df",
+          "databaseName": "bubenchik",
+          "gameNickname": "bubenchik",
+          "dealtRoleLabel": "Экзорцист",
+          "finalRoleId": "exorcist",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 7,
+          "publicId": "5e6d1207-e4b5-461c-b29a-d395b7d1f1b1",
+          "databaseName": "alexey2",
+          "gameNickname": "alexey2",
+          "dealtRoleLabel": "Адвокат Дьявола",
+          "finalRoleId": "devilsadvocate",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 8,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Австрийский автопром",
+          "dealtRoleLabel": "Пукка",
+          "finalRoleId": "pukka",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 9,
+          "publicId": "98feeda4-fdde-41bd-ba1b-c562aae16c3e",
+          "databaseName": "fortel",
+          "gameNickname": "fortel",
+          "dealtRoleLabel": "Профессор",
+          "finalRoleId": "professor",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                },
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                },
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                },
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "gossip",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "gossip",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "gossip",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "gossip",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "gossip",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "obliseyouv20",
+              "role_id": "mastermind",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "courtier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Дени",
+              "role_id": "grandmother",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "player_name": "izvini'da",
+              "role_id": "innkeeper",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "nikitosss67",
+              "role_id": "gambler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Борис-Животное",
+              "role_id": "gossip",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "grandmother",
+                  "reminder": "Внук"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Пьяный"
+                },
+                {
+                  "role_id": "gossip",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "bubenchik",
+              "role_id": "exorcist",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Жив"
+                },
+                {
+                  "role_id": "innkeeper",
+                  "reminder": "Защищён"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "alexey2",
+              "role_id": "devilsadvocate",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "devilsadvocate",
+                  "reminder": "Спасён от казни"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "Австрийский автопром",
+              "role_id": "pukka",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "fortel",
+              "role_id": "professor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "professor",
+                  "reminder": "Нет способности"
+                },
+                {
+                  "role_id": "pukka",
+                  "reminder": "Отравлен"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "schemaVersion": 1,
       "isTest": true,
