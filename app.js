@@ -1,5 +1,5 @@
 import {summarize,filterGames} from './model.mjs';
-import {renderGrimoire} from './grimoire.mjs';
+import {renderGrimoire} from './grimoire.mjs?v=4';
 
 const $=id=>document.getElementById(id);
 const alignments={GOOD:'Добро',EVIL:'Зло',NEUTRAL:'Нейтральная'};
@@ -8,7 +8,7 @@ const winners={GOOD_WINS:'Победа добра',EVIL_WINS:'Победа зл�
 const roles={poisoner:'Отравитель',washerwoman:'Прачка',slayer:'Истребитель',recluse:'Затворник',imp:'Бес',empath:'Эмпат',
   fortune_teller:'Гадалка',fortuneteller:'Гадалка',ravenkeeper:'Хранитель воронов',drunk:'Пьяница',chef:'Повар',baron:'Барон',
   professor:'Профессор',zombuul:'Зомбуль',goon:'Головорез',apprentice:'Подмастерье',angel:'Ангел',klutz:'Неуклюжий',
-  fanggu:'Фан Гу',philosopher:'Философ',oracle:'Оракул',vigormortis:'Вигормортис',gambler:'Игрок',
+  fanggu:'Фан Гу',philosopher:'Философ',oracle:'Оракул',vigormortis:'Вигормортис',gambler:'Азартный Игрок',gossip:'Сплетница',
   grandmother:'Бабушка',godfather:'Крёстный отец',devilsadvocate:'Адвокат дьявола',moonchild:'Лунное дитя',
   fool:'Шут',sailor:'Матрос',pacifist:'Пацифист',chambermaid:'Горничная',exorcist:'Экзорцист',
   snakecharmer:'Заклинатель змей',witch:'Ведьма',pithag:'Ведьма ямы',sweetheart:'Милочка',

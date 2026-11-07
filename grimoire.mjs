@@ -18,6 +18,9 @@ function art(id,label){
 export function renderGrimoire(page,role){
   const wrap=el('div','grimoire-view'),board=el('div','grim-board');
   const tokens=[...page.tokens].sort((a,b)=>a.order-b.order),n=tokens.length;
+  if (tokens.some(token => (token.reminders?.length ?? 0) >= 3)) {
+    board.classList.add('grim-board-dense');
+  }
   board.style.setProperty('--seat-count',n);
   const center=el('div','grim-center');center.append(el('span','grim-page-number',String(page.index+1)),el('span','','Страница гримуара'));board.append(center);
   tokens.forEach((t,i)=>{
