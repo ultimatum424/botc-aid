@@ -2,12 +2,16 @@
   "schemaVersion": 1,
   "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-07T22:03:26.006Z",
-  "publicationRevision": 6,
+  "generatedAt": "2026-11-07T22:13:01.832Z",
+  "publicationRevision": 7,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
       "name": "TEST_A"
+    },
+    {
+      "publicId": "260c8743-8504-44a1-9ced-83f10bb6ad22",
+      "name": "ultimatum"
     },
     {
       "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
@@ -47,7 +51,7 @@
     },
     {
       "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
-      "name": "izvini'da"
+      "name": "izvinis, da"
     },
     {
       "publicId": "e60098b9-4e05-4b59-a9b0-efbe123e0dce",
@@ -120,7 +124,7 @@
         {
           "order": 3,
           "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
-          "databaseName": "izvini'da",
+          "databaseName": "izvinis, da",
           "gameNickname": "izvini'da",
           "dealtRoleLabel": "Трактирщик",
           "finalRoleId": "innkeeper",
