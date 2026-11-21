@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-07T22:13:07.240Z",
-  "publicationRevision": 8,
+  "generatedAt": "2026-11-21T18:52:58.067Z",
+  "publicationRevision": 9,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -16,6 +16,10 @@
     {
       "publicId": "53510d30-aa46-4f47-a99a-920f6ff10bcc",
       "name": "TEST_B"
+    },
+    {
+      "publicId": "5750614c-885a-4909-a471-306b3a078365",
+      "name": "Бубенчик"
     },
     {
       "publicId": "5c06ecaa-39f8-410d-9a49-d3d56ba12230",
@@ -48,6 +52,10 @@
     {
       "publicId": "abae6065-7433-4b84-b00d-9fcc42e62535",
       "name": "Deny_kisa"
+    },
+    {
+      "publicId": "db3d1003-7fa2-4353-a1ff-5674c4dd94c3",
+      "name": "Massonov"
     },
     {
       "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
