@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-21T18:52:58.067Z",
-  "publicationRevision": 9,
+  "generatedAt": "2026-11-21T19:42:25.787Z",
+  "publicationRevision": 10,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -71,6 +71,574 @@
     }
   ],
   "games": [
+    {
+      "schemaVersion": 1,
+      "isTest": false,
+      "gameId": "bb3969a2-9963-4b9e-9535-64851d5d6250",
+      "caseNumber": null,
+      "title": "",
+      "script": {
+        "id": null,
+        "version": null,
+        "name": "who? me? definitely not! ru"
+      },
+      "date": "2026-11-21T19:42:17.179Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 7,
+      "travelerCountAsExported": 0,
+      "fabled": [
+        "bootlegger_ru"
+      ],
+      "demonBluffs": [
+        "fisherman_ru",
+        "amnesiac_ru",
+        "mutant_ru"
+      ],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Кон",
+          "dealtRoleLabel": "Проповедник",
+          "finalRoleId": "preacher_ru",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": "5750614c-885a-4909-a471-306b3a078365",
+          "databaseName": "Бубенчик",
+          "gameNickname": "Бубенчик",
+          "dealtRoleLabel": "Аль-Сахир",
+          "finalRoleId": "alsaahir_ru",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": "e60098b9-4e05-4b59-a9b0-efbe123e0dce",
+          "databaseName": "obliseyouv20",
+          "gameNickname": "obliseyouv20",
+          "dealtRoleLabel": "Пикси",
+          "finalRoleId": "pixie_ru",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": "db3d1003-7fa2-4353-a1ff-5674c4dd94c3",
+          "databaseName": "Massonov",
+          "gameNickname": "Massonov",
+          "dealtRoleLabel": "Дурманщик",
+          "finalRoleId": "cerenovus_ru",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
+          "databaseName": "izvinis, da",
+          "gameNickname": "izvinis, da",
+          "dealtRoleLabel": "Казали",
+          "finalRoleId": "kazali_ru",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": "260c8743-8504-44a1-9ced-83f10bb6ad22",
+          "databaseName": "ultimatum",
+          "gameNickname": "Ставка за 300",
+          "dealtRoleLabel": "Дурачок",
+          "finalRoleId": "villageidiot_ru",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 6,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Letovist",
+          "dealtRoleLabel": "Банши",
+          "finalRoleId": "banshee_ru",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Кон",
+              "role_id": "preacher_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Бубенчик",
+              "role_id": "alsaahir_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "obliseyouv20",
+              "role_id": "pixie_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Massonov",
+              "role_id": "cerenovus_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "izvinis, da",
+              "role_id": "kazali_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Ставка за 300",
+              "role_id": "villageidiot_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Letovist",
+              "role_id": "banshee_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Кон",
+              "role_id": "preacher_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Бубенчик",
+              "role_id": "alsaahir_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "obliseyouv20",
+              "role_id": "pixie_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Massonov",
+              "role_id": "cerenovus_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "izvinis, da",
+              "role_id": "kazali_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Ставка за 300",
+              "role_id": "villageidiot_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Letovist",
+              "role_id": "banshee_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Кон",
+              "role_id": "preacher_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Бубенчик",
+              "role_id": "alsaahir_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "obliseyouv20",
+              "role_id": "pixie_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Massonov",
+              "role_id": "cerenovus_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "izvinis, da",
+              "role_id": "kazali_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Ставка за 300",
+              "role_id": "villageidiot_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pixie_ru",
+                  "reminder": "Способность доступна"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "Letovist",
+              "role_id": "banshee_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Кон",
+              "role_id": "preacher_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Бубенчик",
+              "role_id": "alsaahir_ru",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "obliseyouv20",
+              "role_id": "pixie_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Massonov",
+              "role_id": "cerenovus_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "izvinis, da",
+              "role_id": "kazali_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Ставка за 300",
+              "role_id": "villageidiot_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pixie_ru",
+                  "reminder": "Способность доступна"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "Letovist",
+              "role_id": "banshee_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Кон",
+              "role_id": "preacher_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Бубенчик",
+              "role_id": "alsaahir_ru",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "obliseyouv20",
+              "role_id": "pixie_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Massonov",
+              "role_id": "cerenovus_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "preacher_ru",
+                  "reminder": "Нет способности"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "izvinis, da",
+              "role_id": "kazali_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Ставка за 300",
+              "role_id": "villageidiot_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pixie_ru",
+                  "reminder": "Способность доступна"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "Letovist",
+              "role_id": "banshee_ru",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "kazali_ru",
+                  "reminder": "Умирает"
+                },
+                {
+                  "role_id": "banshee_ru",
+                  "reminder": "Способность доступна"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Кон",
+              "role_id": "preacher_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Бубенчик",
+              "role_id": "alsaahir_ru",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "obliseyouv20",
+              "role_id": "pixie_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Massonov",
+              "role_id": "cerenovus_ru",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "preacher_ru",
+                  "reminder": "Нет способности"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "izvinis, da",
+              "role_id": "kazali_ru",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "Ставка за 300",
+              "role_id": "villageidiot_ru",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "pixie_ru",
+                  "reminder": "Способность доступна"
+                }
+              ]
+            },
+            {
+              "order": 6,
+              "player_name": "Letovist",
+              "role_id": "banshee_ru",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "kazali_ru",
+                  "reminder": "Умирает"
+                },
+                {
+                  "role_id": "banshee_ru",
+                  "reminder": "Способность доступна"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "schemaVersion": 1,
       "isTest": false,
