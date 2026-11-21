@@ -1,3 +1,5 @@
+import { baseRoleId } from './scenarios.mjs?v=1';
+
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 let labelId=0;
 function curvedLabel(name){
@@ -10,12 +12,36 @@ function curvedLabel(name){
   if(name.length>16){tp.setAttribute('textLength','150');tp.setAttribute('lengthAdjust','spacingAndGlyphs');}tp.textContent=name;
   text.append(tp);svg.append(path,text);return svg;
 }
-function art(id,label){
+export function roleArt(id, label, character) {
   const box=el('span','role-art'),fallback=el('span','art-fallback',String(label||'?').slice(0,2));
-  const img=el('img');img.src=`./assets/roles/${String(id||'').toLowerCase().replace(/[_-]/g,'')}.webp`;img.alt='';img.loading='lazy';
-  img.onerror=()=>{img.remove();fallback.hidden=false;};fallback.hidden=true;box.append(fallback,img);return box;
+  const slug = baseRoleId(character?.id ?? id);
+  const local = /^[a-z0-9]+$/.test(slug) && character?.id !== '_root'
+    ? `./assets/roles/${slug}.webp`
+    : null;
+  const remote = typeof character?.image === 'string' && /^https:\/\/(botc\.1nv\.is|bloodstar\.clocktica\.com)\//.test(character.image)
+    ? character.image
+    : null;
+  const sources = [local, remote].filter(Boolean);
+  box.append(fallback);
+  if (!sources.length) return box;
+  const img = el('img');
+  img.alt = '';
+  img.loading = 'lazy';
+  img.referrerPolicy = 'no-referrer';
+  img.onerror = () => {
+    if (sources.length) img.src = sources.shift();
+    else {
+      img.remove();
+      fallback.hidden = false;
+    }
+  };
+  fallback.hidden = true;
+  img.src = sources.shift();
+  box.append(img);
+  return box;
 }
-export function renderGrimoire(page,role){
+export function renderGrimoire(page, role, characterFor) {
+  const art = (id, name) => roleArt(id, name, characterFor(id));
   const wrap=el('div','grimoire-view'),board=el('div','grim-board grim-board-orbit');
   const tokens=[...page.tokens].sort((a,b)=>a.order-b.order),n=tokens.length;
   board.style.setProperty('--seat-count',n);
@@ -27,6 +53,8 @@ export function renderGrimoire(page,role){
     const team=t.alignment==='GOOD'?'good':t.alignment==='EVIL'?'evil':'neutral';
     const face=el('div',`role-token team-${team}${t.is_dead?' is-dead':''}`);
     face.append(art(t.role_id,role(t.role_id)),curvedLabel(String(role(t.role_id))));
+    const ability = characterFor(t.role_id)?.ability;
+    if (ability) face.title = ability;
     if(t.is_dead){const shroud=el('img','token-shroud');shroud.src='./assets/tokens/shroud.png';shroud.alt='Мёртв';face.append(shroud);}
     if(t.related_role_id){const related=el('span','related-token');related.title=`Связанная роль: ${role(t.related_role_id)}`;related.append(art(t.related_role_id,role(t.related_role_id)));face.append(related);}
     const name=el('div','seat-name',t.player_name||'Без имени');name.prepend(el('span','seat-order',String(t.order+1)));

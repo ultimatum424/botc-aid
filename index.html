@@ -6,8 +6,8 @@
   <meta name="color-scheme" content="dark">
   <meta name="description" content="Тестовая статистика Blood on the Clocktower: игры, игроки и страницы гримуара.">
   <title>BOTC Aid · Статистика</title>
-  <link rel="stylesheet" href="./styles.css?v=5">
-  <script type="module" src="./app.js?v=6"></script>
+  <link rel="stylesheet" href="./styles.css?v=6">
+  <script type="module" src="./app.js?v=7"></script>
 </head>
 <body>
   <main>
@@ -20,6 +20,7 @@
       <nav class="tabs" role="tablist" aria-label="Разделы статистики">
         <button id="games-tab" class="tab" type="button" role="tab" aria-selected="true" aria-controls="games-panel">Игры</button>
         <button id="players-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="players-panel" tabindex="-1">Игроки</button>
+        <button id="scripts-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="scripts-panel" tabindex="-1">Сценарии</button>
       </nav>
       <div id="games-panel" role="tabpanel" aria-labelledby="games-tab">
         <section aria-labelledby="games-heading">
@@ -38,6 +39,12 @@
           <div class="section-heading"><h2 id="players-heading">Игроки</h2><span class="muted">Сводка по итоговому состоянию</span></div>
           <div class="table-wrap"><table><thead><tr><th scope="col">Профиль</th><th scope="col">Игр</th><th scope="col">Мёртв в конце</th><th scope="col">Голос мёртвого использован</th><th scope="col">Роли в конце партий</th></tr></thead><tbody id="players"></tbody></table></div>
           <p class="hint">В статистику профиля попадают только участники с привязанным publicId. Совпадение игрового ника с именем профиля не создаёт связь.</p>
+        </section>
+      </div>
+      <div id="scripts-panel" role="tabpanel" aria-labelledby="scripts-tab" hidden>
+        <section aria-labelledby="scripts-heading">
+          <div class="section-heading"><h2 id="scripts-heading">Сценарии</h2></div>
+          <div id="scenario-cards"></div>
         </section>
       </div>
       <footer id="updated" class="muted"></footer>

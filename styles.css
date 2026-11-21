@@ -1,5 +1,50 @@
 :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e9e7ee;background:#111118;line-height:1.5;font-synthesis:none;color-scheme:dark}
 
+.scenario-card {
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  background: #1b1923;
+  border: 1px solid #36323f;
+  border-radius: 10px;
+}
+.scenario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.scenario-header h3, .scenario-header p { margin: 0; }
+.scenario-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #36323f;
+}
+.scenario-section summary { cursor: pointer; font-weight: 650; }
+.scenario-roles {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.scenario-role { display: flex; align-items: flex-start; gap: 12px; }
+.scenario-role > .role-art {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #dac49a url('./assets/tokens/token-bg.webp') center/cover;
+}
+.scenario-role p, .scenario-night p { margin: 3px 0 0; }
+.scenario-night li + li { margin-top: 10px; }
+.scenario-setup {
+  display: inline-block;
+  margin-inline-start: 8px;
+  color: #e2c886;
+  font-size: .875rem;
+}
+
 @media (min-width: 721px) {
   .grim-board.grim-board-orbit {
     display: grid;
