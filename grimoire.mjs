@@ -1,4 +1,4 @@
-import { baseRoleId } from './scenarios.mjs?v=1';
+import { baseRoleId } from './scenarios.mjs?v=2';
 
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 let labelId=0;

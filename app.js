@@ -1,6 +1,6 @@
 import {summarize,filterGames} from './model.mjs';
-import { renderGrimoire, roleArt } from './grimoire.mjs?v=7';
-import { loadScenarioCatalog, renderScenarioCards, roleKey, scenarioFor, scenarioTitle, standardRoleName } from './scenarios.mjs?v=1';
+import { renderGrimoire, roleArt } from './grimoire.mjs?v=8';
+import { loadScenarioCatalog, renderScenarioCards, roleKey, scenarioFor, scenarioTitle, standardRoleName } from './scenarios.mjs?v=2';
 
 const $=id=>document.getElementById(id);
 const alignments={GOOD:'Добро',EVIL:'Зло',NEUTRAL:'Нейтральная'};

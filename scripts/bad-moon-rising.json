@@ -1,0 +1,42 @@
+[
+  {
+    "id": "_meta",
+    "name": "Восход кровавой луны",
+    "firstNight": [
+      "dusk", "minioninfo", "lunatic", "demoninfo", "sailor",
+      "courtier", "godfather", "devilsadvocate", "pukka",
+      "grandmother", "chambermaid", "dawn"
+    ],
+    "otherNight": [
+      "dusk", "sailor", "courtier", "innkeeper", "gambler",
+      "devilsadvocate", "lunatic", "exorcist", "zombuul", "pukka",
+      "shabaloth", "po", "assassin", "godfather", "gossip", "professor",
+      "tinker", "moonchild", "grandmother", "chambermaid", "dawn"
+    ]
+  },
+  "grandmother",
+  "sailor",
+  "chambermaid",
+  "exorcist",
+  "innkeeper",
+  "gambler",
+  "gossip",
+  "courtier",
+  "professor",
+  "minstrel",
+  "tealady",
+  "pacifist",
+  "fool",
+  "goon",
+  "lunatic",
+  "tinker",
+  "moonchild",
+  "godfather",
+  "devilsadvocate",
+  "assassin",
+  "mastermind",
+  "zombuul",
+  "pukka",
+  "shabaloth",
+  "po"
+]

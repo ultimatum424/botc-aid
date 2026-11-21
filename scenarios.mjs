@@ -1,5 +1,17 @@
 const definitions = [
   {
+    id: 'bad-moon-rising',
+    title: 'Восход кровавой луны',
+    aliases: ['Bad Moon Rising'],
+    references: [
+      { label: 'Правила и способности на русском', url: 'https://botc.1nv.is/wiki/Bad_Moon_Rising' },
+      {
+        label: 'Русский JSON сообщества с путешественниками',
+        url: 'https://raw.githubusercontent.com/RealVidy/botc-translations/main/assets/scripts/ru_RU/bad_moon_rising.json',
+      },
+    ],
+  },
+  {
     id: 'gentle-night',
     title: 'Спокойной ночи',
     aliases: ['Gentle Night AID', 'Gentle Night'],
@@ -11,12 +23,12 @@ const definitions = [
   },
 ];
 
-// The first script references standard roles by ID. Only their names and types are supplied here.
+// Scripts that reference standard roles by ID get their display types here.
 const standardTypes = {
-  townsfolk: 'chef investigator librarian highpriestess chambermaid towncrier undertaker acrobat juggler soldier sage mayor virgin',
-  outsider: 'butler drunk sweetheart barber',
-  minion: 'marionette poisoner spy goblin scarletwoman baron',
-  demon: 'pukka imp',
+  townsfolk: 'chef investigator librarian highpriestess chambermaid towncrier undertaker acrobat juggler soldier sage mayor virgin grandmother sailor exorcist innkeeper gambler gossip courtier professor minstrel tealady pacifist fool',
+  outsider: 'butler drunk sweetheart barber goon lunatic tinker moonchild',
+  minion: 'marionette poisoner spy goblin scarletwoman baron godfather devilsadvocate assassin mastermind',
+  demon: 'pukka imp zombuul shabaloth po',
 };
 const standardNames = new Map(Object.entries({
   librarian: 'Библиотекарь',
@@ -25,14 +37,18 @@ const standardNames = new Map(Object.entries({
   marionette: 'Марионетка',
   barber: 'Парикмахер',
   goblin: 'Гоблин',
+  minstrel: 'Менестрель',
+  tealady: 'Травница',
+  lunatic: 'Безумец',
+  po: 'По',
 }));
 const typesByRole = new Map(Object.entries(standardTypes).flatMap(
   ([type, ids]) => ids.split(' ').map(id => [id, type]),
 ));
 
 const scriptKey = value => String(value ?? '').normalize('NFKC').trim().toLowerCase();
-export const roleKey = value => scriptKey(value).replace(/[\s_'’\-]+/g, '');
-export const baseRoleId = id => String(id ?? '').trim().toLowerCase().replace(/_ru$/, '').replace(/[_-]/g, '');
+export const roleKey = value => scriptKey(value).replace(/^ru_ru_/, '').replace(/[\s_'’\-]+/g, '');
+export const baseRoleId = id => scriptKey(id).replace(/^ru_ru_|_ru$/g, '').replace(/[_-]/g, '');
 const definitionsByName = new Map(definitions.flatMap(definition =>
   [definition.title, ...definition.aliases].map(name => [scriptKey(name), definition]),
 ));
@@ -86,6 +102,13 @@ export function renderScenarioCards(container, catalog, roleName, art, create) {
     download.download = `${scenario.id}.json`;
     header.append(title, download);
     card.append(header);
+    for (const reference of scenario.references ?? []) {
+      const caption = create('p', null, 'muted');
+      const link = create('a', reference.label);
+      link.href = reference.url;
+      caption.append(link);
+      card.append(caption);
+    }
     const roles = create('details', null, 'scenario-section');
     roles.append(create('summary', `Состав сценария · ${scenario.characters.length}`));
     for (const [type, label] of Object.entries(groups)) {
