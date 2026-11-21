@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-21T19:42:25.787Z",
-  "publicationRevision": 10,
+  "generatedAt": "2026-11-21T21:31:19.086Z",
+  "publicationRevision": 11,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -634,6 +634,1512 @@
                   "reminder": "Способность доступна"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": false,
+      "gameId": "77e2f403-2b66-4b79-9cda-7c6754607776",
+      "caseNumber": null,
+      "title": "",
+      "script": {
+        "id": "5e3ca34d-ed32-4922-b776-7b32b9f92c78",
+        "version": "1.0.0",
+        "name": "Gentle Night AID"
+      },
+      "date": "2026-11-21T18:52:46.887Z",
+      "winner": "GOOD_WINS",
+      "playerCountAsExported": 10,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [
+        "investigator",
+        "soldier",
+        "butler"
+      ],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Никита",
+          "dealtRoleLabel": "Верховная Жрица",
+          "finalRoleId": "highpriestess",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": true
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Ева",
+          "dealtRoleLabel": "Жонглёр",
+          "finalRoleId": "juggler",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Даня",
+          "dealtRoleLabel": "Гробовщик",
+          "finalRoleId": "undertaker",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": true
+        },
+        {
+          "order": 3,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Кон",
+          "dealtRoleLabel": "Мудрец",
+          "finalRoleId": "sage",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": true
+        },
+        {
+          "order": 4,
+          "publicId": "5750614c-885a-4909-a471-306b3a078365",
+          "databaseName": "Бубенчик",
+          "gameNickname": "Бубенчик",
+          "dealtRoleLabel": "Мэр",
+          "finalRoleId": "mayor",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": "e60098b9-4e05-4b59-a9b0-efbe123e0dce",
+          "databaseName": "obliseyouv20",
+          "gameNickname": "obliseyouv20",
+          "dealtRoleLabel": "Глашатай",
+          "finalRoleId": "towncrier",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 6,
+          "publicId": "db3d1003-7fa2-4353-a1ff-5674c4dd94c3",
+          "databaseName": "Massonov",
+          "gameNickname": "Massonov",
+          "dealtRoleLabel": "Горничная",
+          "finalRoleId": "marionette",
+          "relatedRoleId": "chambermaid",
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 7,
+          "publicId": "dd2c6f17-c9ab-4ba2-8c20-7de582da2bfc",
+          "databaseName": "izvinis, da",
+          "gameNickname": "izvinis, da",
+          "dealtRoleLabel": "Чёрт",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 8,
+          "publicId": "260c8743-8504-44a1-9ced-83f10bb6ad22",
+          "databaseName": "ultimatum",
+          "gameNickname": "ultimatum",
+          "dealtRoleLabel": "Повар",
+          "finalRoleId": "chef",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 9,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Letovist",
+          "dealtRoleLabel": "Блудница",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                },
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "scarletwoman",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                },
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Никита",
+              "role_id": "highpriestess",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Ева",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Даня",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "Кон",
+              "role_id": "sage",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": true,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Бубенчик",
+              "role_id": "mayor",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 5,
+              "player_name": "obliseyouv20",
+              "role_id": "towncrier",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Massonov",
+              "role_id": "marionette",
+              "related_role_id": "chambermaid",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "marionette",
+                  "reminder": "Марионетка"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "izvinis, da",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            },
+            {
+              "order": 8,
+              "player_name": "ultimatum",
+              "role_id": "chef",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 9,
+              "player_name": "Letovist",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
             }
           ]
         }
