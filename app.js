@@ -47,6 +47,39 @@ function roleChain(p, roleName){
 }
 function dateLabel(value){const date=new Date(value);return Number.isNaN(date.valueOf())?value:date.toLocaleDateString('ru-RU',{dateStyle:'medium'});}
 function countLabel(value,one,few,many){const n=Math.abs(value)%100,last=n%10;return `${value} ${n>10&&n<20?many:last===1?one:last>1&&last<5?few:many}`;}
+function gameLink(gameId) {
+  const url = new URL(location.href);
+  url.hash = `game-${encodeURIComponent(gameId)}`;
+  return url.href;
+}
+function shareGame(gameId) {
+  const actions = node('div', null, 'game-share');
+  const button = node('button', 'Скопировать ссылку', 'button');
+  button.type = 'button';
+  const status = node('span', '', 'muted');
+  status.setAttribute('role', 'status');
+  const field = node('input');
+  field.type = 'url';
+  field.readOnly = true;
+  field.hidden = true;
+  field.setAttribute('aria-label', 'Ссылка на игру');
+  button.addEventListener('click', async () => {
+    const url = gameLink(gameId);
+    try {
+      await navigator.clipboard.writeText(url);
+      field.hidden = true;
+      status.textContent = 'Ссылка скопирована';
+    } catch {
+      field.value = url;
+      field.hidden = false;
+      field.focus();
+      field.select();
+      status.textContent = 'Скопируйте выделенную ссылку';
+    }
+  });
+  actions.append(button, status, field);
+  return actions;
+}
 function gameCard(game){
   const scenario = catalog.get(scenarioFor(game.script.name)?.id);
   const characterFor = id => scenario?.lookup.get(roleKey(id));
@@ -56,7 +89,8 @@ function gameCard(game){
   title.append(node('div',`${dateLabel(game.date)} · ${game.script.name}`,'game-title'));
   title.append(node('div',`${countLabel(game.participants.length,'игрок','игрока','игроков')} · ${countLabel(game.snapshots.length,'страница гримуара','страницы гримуара','страниц гримуара')}`,'game-subtitle'));
   summary.append(title,tag(winners[game.winner]??game.winner,game.winner));details.append(summary);
-  const body=node('div',null,'game-body');if(game.title)body.append(node('p',game.title,'notes'));body.append(node('h3','Итоговый состав'));
+  const body=node('div',null,'game-body');body.append(shareGame(game.gameId));
+  if(game.title)body.append(node('p',game.title,'notes'));body.append(node('h3','Итоговый состав'));
   const roster=table(['Место','Игрок / профиль','Роли'],game.participants.map(p=>[
     p.order+1,profileCell(p),roleChain(p,roleName)]));roster.classList.add('roster-table');body.append(roster);
   if(game.fabled.length || game.demonBluffs.length || game.travelerCountAsExported){
@@ -88,6 +122,35 @@ function setActiveTab(name,{focus=false}={}){
     tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;panel.hidden=!selected;
   }
   if(focus)$(`${activeTab}-tab`).focus();
+}
+function openGameFromLink(scroll = true) {
+  const prefix = '#game-';
+  if (!currentData || !location.hash.startsWith(prefix)) return;
+  let gameId;
+  try {
+    gameId = decodeURIComponent(location.hash.slice(prefix.length));
+  } catch {
+    return;
+  }
+  const target = currentData.games.find(game => game.gameId === gameId);
+  if (!target) return;
+  let card = $(`game-${gameId}`);
+  if (!card) {
+    if (!scroll) return;
+    const typeFilter = $('type-filter');
+    if (typeFilter.value !== 'all') typeFilter.value = target.isTest ? 'test' : 'real';
+    explicitType = true;
+    $('script-filter').value = '';
+    $('player-filter').value = '';
+    renderPage(currentData);
+    card = $(`game-${gameId}`);
+  }
+  if (!card) return;
+  card.open = true;
+  if (scroll) {
+    setActiveTab('games');
+    card.scrollIntoView({block: 'start'});
+  }
 }
 for(const [index, tabName] of tabNames.entries()){
   $(`${tabName}-tab`).addEventListener('click',()=>setActiveTab(tabName));
@@ -146,10 +209,11 @@ async function load(){
     const data=JSON.parse(new TextDecoder().decode(bytes));
     if(data.schemaVersion!==1 || !Array.isArray(data.games) || !Array.isArray(data.players))throw Error('Invalid dataset');
     await scenariosReady;
+    const firstLoad = currentData === null;
     currentData=data;currentHash=version?.sha256??null;renderPage(data);
     $('content').dataset.revision=String(data.publicationRevision??0);
     $('content').dataset.sha256=currentHash??'';
-    $('content').querySelectorAll('details.game').forEach(card=>{if(card.id===location.hash.slice(1))card.open=true;});
+    openGameFromLink(firstLoad);
   } catch {
     $('status').hidden=false;$('status').textContent=currentData?'Не удалось обновить данные. Показана предыдущая версия; повторим автоматически.':'Не удалось загрузить статистику. Повторим автоматически; можно обновить страницу.';
   } finally {loading=false;}
@@ -157,6 +221,7 @@ async function load(){
 $('type-filter').addEventListener('change',()=>{explicitType=true;if(currentData)renderPage(currentData);});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')load();});
 window.addEventListener('focus',load);
+window.addEventListener('hashchange', () => openGameFromLink());
 setInterval(()=>{if(document.visibilityState==='visible')load();},60_000);
 const scenariosReady = loadScenarioCatalog().then(scenarios => {
   for (const [id, scenario] of scenarios) catalog.set(id, scenario);

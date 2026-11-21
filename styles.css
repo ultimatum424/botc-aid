@@ -1,5 +1,9 @@
 :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e9e7ee;background:#111118;line-height:1.5;font-synthesis:none;color-scheme:dark}
 
+.game { scroll-margin-top: 16px; }
+.game-share { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 14px; }
+.game-share input { width: 100%; padding: 8px 10px; border: 1px solid #4b4359; border-radius: 7px; font: inherit; }
+
 .scenario-card {
   padding: 18px 20px;
   margin-bottom: 12px;
