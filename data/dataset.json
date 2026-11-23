@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "isTest": false,
   "datasetId": "main",
-  "generatedAt": "2026-11-23T19:51:06.283Z",
-  "publicationRevision": 13,
+  "generatedAt": "2026-11-23T19:51:37.881Z",
+  "publicationRevision": 14,
   "players": [
     {
       "publicId": "006458f1-116d-433f-b704-a4fdc807540c",
@@ -1483,6 +1483,788 @@
                 {
                   "role_id": "imp",
                   "reminder": "Мёртв"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "isTest": false,
+      "gameId": "505ec591-9ceb-416f-983a-36bfb83d5bbb",
+      "caseNumber": null,
+      "title": "",
+      "script": {
+        "id": "5e3ca34d-ed32-4922-b776-7b32b9f92c78",
+        "version": "1.0.0",
+        "name": "Gentle Night AID"
+      },
+      "date": "2026-11-23T18:03:05.640Z",
+      "winner": "EVIL_WINS",
+      "playerCountAsExported": 8,
+      "travelerCountAsExported": 0,
+      "fabled": [],
+      "demonBluffs": [
+        "virgin",
+        "soldier",
+        "towncrier"
+      ],
+      "participants": [
+        {
+          "order": 0,
+          "publicId": "260c8743-8504-44a1-9ced-83f10bb6ad22",
+          "databaseName": "ultimatum",
+          "gameNickname": "Ставка за 300",
+          "dealtRoleLabel": "undertaker",
+          "finalRoleId": "undertaker",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 1,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Дима",
+          "dealtRoleLabel": "Цирюльник",
+          "finalRoleId": "barber",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 2,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Настя",
+          "dealtRoleLabel": "Чёрт",
+          "finalRoleId": "imp",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": false,
+          "usedGhostVote": false
+        },
+        {
+          "order": 3,
+          "publicId": "5e6d1207-e4b5-461c-b29a-d395b7d1f1b1",
+          "databaseName": "alexey2",
+          "gameNickname": "alexey2",
+          "dealtRoleLabel": "Барон",
+          "finalRoleId": "baron",
+          "relatedRoleId": null,
+          "finalAlignment": "EVIL",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 4,
+          "publicId": "db3d1003-7fa2-4353-a1ff-5674c4dd94c3",
+          "databaseName": "Massonov",
+          "gameNickname": "Massonov",
+          "dealtRoleLabel": "Душечка",
+          "finalRoleId": "sweetheart",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 5,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Даня",
+          "dealtRoleLabel": "chambermaid",
+          "finalRoleId": "chambermaid",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 6,
+          "publicId": null,
+          "databaseName": null,
+          "gameNickname": "Гепа",
+          "dealtRoleLabel": "Жонглёр",
+          "finalRoleId": "juggler",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        },
+        {
+          "order": 7,
+          "publicId": "5750614c-885a-4909-a471-306b3a078365",
+          "databaseName": "Бубенчик",
+          "gameNickname": "Бубенчик",
+          "dealtRoleLabel": "butler",
+          "finalRoleId": "butler",
+          "relatedRoleId": null,
+          "finalAlignment": "GOOD",
+          "isDead": true,
+          "usedGhostVote": false
+        }
+      ],
+      "snapshots": [
+        {
+          "index": 0,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Ставка за 300",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "barber",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Настя",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "alexey2",
+              "role_id": "baron",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Massonov",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "butler",
+                  "reminder": "Хозяин"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Даня",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Гепа",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 7,
+              "player_name": "Бубенчик",
+              "role_id": "butler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Ставка за 300",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "barber",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Настя",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "alexey2",
+              "role_id": "baron",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Massonov",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "butler",
+                  "reminder": "Хозяин"
+                },
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Даня",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Гепа",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 7,
+              "player_name": "Бубенчик",
+              "role_id": "butler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Ставка за 300",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "barber",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Настя",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "alexey2",
+              "role_id": "baron",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Massonov",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "butler",
+                  "reminder": "Хозяин"
+                },
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Даня",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Гепа",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 7,
+              "player_name": "Бубенчик",
+              "role_id": "butler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Ставка за 300",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "barber",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Настя",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "alexey2",
+              "role_id": "baron",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Massonov",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "butler",
+                  "reminder": "Хозяин"
+                },
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Даня",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Гепа",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 7,
+              "player_name": "Бубенчик",
+              "role_id": "butler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Ставка за 300",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "barber",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Настя",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "alexey2",
+              "role_id": "baron",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Massonov",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "butler",
+                  "reminder": "Хозяин"
+                },
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                },
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Даня",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Гепа",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "sweetheart",
+                  "reminder": "Пьяный"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "Бубенчик",
+              "role_id": "butler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Ставка за 300",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "barber",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Настя",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "alexey2",
+              "role_id": "baron",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Massonov",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "butler",
+                  "reminder": "Хозяин"
+                },
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                },
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Даня",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Гепа",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "sweetheart",
+                  "reminder": "Пьяный"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "Бубенчик",
+              "role_id": "butler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "tokens": [
+            {
+              "order": 0,
+              "player_name": "Ставка за 300",
+              "role_id": "undertaker",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 1,
+              "player_name": "Дима",
+              "role_id": "barber",
+              "alignment": "GOOD",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 2,
+              "player_name": "Настя",
+              "role_id": "imp",
+              "alignment": "EVIL",
+              "is_dead": false,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 3,
+              "player_name": "alexey2",
+              "role_id": "baron",
+              "alignment": "EVIL",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 4,
+              "player_name": "Massonov",
+              "role_id": "sweetheart",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "butler",
+                  "reminder": "Хозяин"
+                },
+                {
+                  "role_id": "juggler",
+                  "reminder": "Верно"
+                },
+                {
+                  "role_id": "imp",
+                  "reminder": "Мёртв"
+                }
+              ]
+            },
+            {
+              "order": 5,
+              "player_name": "Даня",
+              "role_id": "chambermaid",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": []
+            },
+            {
+              "order": 6,
+              "player_name": "Гепа",
+              "role_id": "juggler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "sweetheart",
+                  "reminder": "Пьяный"
+                }
+              ]
+            },
+            {
+              "order": 7,
+              "player_name": "Бубенчик",
+              "role_id": "butler",
+              "alignment": "GOOD",
+              "is_dead": true,
+              "used_ghost_vote": false,
+              "reminders": [
+                {
+                  "role_id": "undertaker",
+                  "reminder": "Умер днём"
                 }
               ]
             }
